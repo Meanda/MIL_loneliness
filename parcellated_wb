@@ -1,0 +1,8 @@
+wb_command -cifti-parcellate gbc_zstat_sub997.dscalar.nii Q1-Q6_RelatedValidation210.CorticalAreas_dil_Final_Final_Areas_Group_Colors.32k_fs_LR.dlabel.nii COLUMN gbc_zstat_sub997.pscalar.nii -exclude-outliers 3 3
+
+wb_command -cifti-separate rsfc_ColeParcel2Vertex_sub997_R_AAIC_zstat.dscalar.nii COLUMN -metric CORTEX_LEFT BC_seed_R_AAIC_Left_zstat.func.gii -roi BC_seed_R_AAIC_Left_zstat.shape.gii -metric CORTEX_RIGHT BC_seed_R_AAIC_Right_zstat.func.gii -roi BC_seed_R_AAIC_Right_zstat.shape.gii 
+
+wb_command -gifti-convert BASE64_BINARY BC_seed_R_AAIC_Left_zstat.func.gii BC_seed_R_AAIC_Left_zstat.func.gii
+wb_command -gifti-convert BASE64_BINARY BC_seed_R_AAIC_Right_zstat.func.gii BC_seed_R_AAIC_Right_zstat.func.gii
+
+

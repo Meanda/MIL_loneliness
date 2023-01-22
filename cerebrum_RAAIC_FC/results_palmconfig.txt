@@ -1,0 +1,17 @@
+# Configuration file for PALM.
+# Version alpha119, running in MATLAB 9.11.0.1769968 (R2021b).
+# 11-Apr-2022 22:35:51
+
+-i rsfMRI_RAAIC_FC_cerebrum_MAPnLONE_970.pscalar.nii
+-transposedata
+-d map_lone_scaled_nools.mat
+-t map_lone_con.con
+-eb MAPnLONE_EB.CSV
+-o results
+-n 5000
+-logp
+-nouncorrected
+-corrcon
+-accel tail
+-savemax
+-savemetrics
